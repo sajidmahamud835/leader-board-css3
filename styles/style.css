@@ -51,16 +51,19 @@ h2{
 }
 section > div{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 10px;
+}
+#top-players {
+    grid-template-columns: repeat(3, 1fr);
 }
 .player{
     display: flex;
     align-items: center;
     margin: 10px;
 }
-section img{
+.player img{
     width: 56px;
+    height: 56px;
 }
 section a{
     font-size: 1.2em;
@@ -74,4 +77,28 @@ section a{
 hr
 {
 width: 96%;
+}
+
+#top-blogs {
+    grid-template-columns: repeat(2, 1fr);
+}
+#top-blogs img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+}
+.blog-thumbline{
+    width: 40%;
+}
+.blog-description{
+    width: 60%;
+}
+.author{
+    color: gray;
+}
+
+.author-name{
+    color: blue;
 }
