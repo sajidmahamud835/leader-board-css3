@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
 }
 header {
     display: flex;
@@ -33,9 +34,9 @@ nav a{
     margin: 5px;
 }
 main{
-    background-color: #E5E5E5;
-    display: flex;
+    display: flexbox;
     justify-content: center;
+    margin-bottom: 20px;
 }
 section{
     display: flex;
@@ -44,7 +45,7 @@ section{
     border-radius: 5px;
     width: 65%;
     padding: 20px;
-    margin: 20px;
+    margin: 25px auto 0 auto;
 }
 h2{
     color: #562EFF;
@@ -94,6 +95,7 @@ width: 96%;
 }
 .blog-description{
     width: 60%;
+
 }
 .author{
     color: gray;
@@ -101,4 +103,27 @@ width: 96%;
 
 .author-name{
     color: blue;
+}
+#latest-courses{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#latest-courses img{
+    width: 224px;
+    height: 104px;
+}
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.status{
+    color: #FFC014;
+}
+
+.duration{
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 3px 5px;
 }
