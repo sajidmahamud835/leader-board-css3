@@ -4,6 +4,7 @@ body{
     background-color: #E5E5E5;
 }
 header {
+    max-width: 4000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +12,7 @@ header {
     padding: 0 20%;
 }
 nav {
+    min-width: 220px;
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -20,7 +22,7 @@ nav a{
     text-decoration: none;
     color: white;
     font-size: 1.2em;
-    margin: 2px;
+    margin: 0 5px;
 }
 .logo{
     display: flex;
@@ -44,6 +46,8 @@ section{
     background-color: white;
     border-radius: 5px;
     width: 65%;
+    max-width: 1750px;
+    min-width: 980px;
     padding: 20px;
     margin: 25px auto 0 auto;
 }
@@ -107,7 +111,7 @@ width: 96%;
 #latest-courses{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+
 }
 #latest-courses img{
     width: 224px;
@@ -118,7 +122,7 @@ width: 96%;
     justify-content: space-between;
 }
 
-.status{
+.status .rating{
     color: #FFC014;
 }
 
@@ -126,4 +130,67 @@ width: 96%;
     background-color: #FFE4E8;
     border-radius: 15px;
     padding: 3px 5px;
+    color: #FF4A60;
+}
+
+@media only screen and (max-width: 980px) {
+    section{
+        min-width: 280px;
+    }
+    #top-players {
+        grid-template-columns: 1fr 1fr;
+    }
+    #top-blogs {
+        grid-template-columns: 1fr
+    }
+    #latest-courses{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .course{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 705px) {
+    nav {
+        min-width: 220px;
+        width: 60%;
+    }
+    header {
+        padding: 0 10%;
+    }
+    img{
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav {
+        min-width: 100%;
+        width: 60%;
+    }
+    header {
+        flex-wrap: wrap;
+        width: auto;
+    }
+    section{
+        min-width: 270px;
+    }
+}
+@media only screen and (max-width: 290px) {
+    nav {
+        min-width: 100%;
+        width: 60%;
+    }
+    header {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    img{
+        max-width: 70%;
+    }
+    section{
+        min-width: 100%;
+        margin: 0;
+    }
 }
